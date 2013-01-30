@@ -34,5 +34,8 @@ class Sprocket {
 	public function __construct($settings) {
 		$this->settings = array_intersect_key($settings + $this->settings, $this->settings);
 	}
+	
+	
+	// die(shell_exec('NODE_PATH="/home/app/nodejs/node_modules/"; export NODE_PATH; uglifyjs -o /home/app/public_html/js/profile.min5.js /home/app/public_html/js/profile.js'));
 
 }
