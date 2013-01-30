@@ -1,0 +1,21 @@
+{
+  "name": "walker/sprocket",
+  "type": "library",
+  "description": "A simple PHP sprocket's re-implementation.",
+  "keywords": ["sprockets", "js", "javascript", "css", "stylesheets"],
+  "homepage": "https://github.com/walker/sprocket",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Walker Hamilton",
+      "email": "myself@walkerhamilton.com",
+      "homepage": "http://walkerhamilton.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.3.0"
+  },
+  "autoload": {
+    "psr-0": { "Walker\\Sprocket": "src/" }
+  }
+}
