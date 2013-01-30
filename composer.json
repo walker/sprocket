@@ -12,6 +12,20 @@
       "homepage": "http://walkerhamilton.com"
     }
   ],
+  "repositories": [
+    {
+        "type": "vcs",
+        "url": "https://github.com/alxlit/coffeescript-php"
+    },
+    {
+        "type": "vcs",
+        "url": "https://github.com/natxet/CssMin"
+    },
+    {
+        "type": "vcs",
+        "url": "https://github.com/nick4fake/JsMin"
+    }
+  ],
   "require": {
     "php": ">=5.3.0",
     "coffeescript/coffeescript": "dev-master",
