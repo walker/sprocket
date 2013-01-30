@@ -1,11 +1,12 @@
 <?php
-namespace Walker\Sprocket;
 /**
  * @file
  * Provide basic concatenation, minifying, and caching of css & js.
  *
  * Created by Walker Hamilton on 2013-01-30.
  */
+namespace Walker\Sprocket;
+
 if(!defined('DS')) define('DS', DIRECTORY_SEPARATOR);
 
 /**
