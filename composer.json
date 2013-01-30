@@ -28,7 +28,7 @@
   ],
   "require": {
     "php": ">=5.3.0",
-    "alxlit/coffeescript": "dev-master",
+    "alxlit/coffeescript-php": "dev-master",
     "natxet/CssMin": "dev-master",
     "nick4fake/jsmin": "dev-master"
   },
