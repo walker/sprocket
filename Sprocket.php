@@ -5,9 +5,6 @@
  *
  * Created by Walker Hamilton on 2013-01-30.
  */
-namespace Walker\Sprocket;
-
-if(!defined('DS')) define('DS', DIRECTORY_SEPARATOR);
 
 /**
  * This class provides javascript and css concatenation, minifying, and caching.
@@ -24,7 +21,7 @@ class Sprocket {
 		'js_directories' => array(),
 		'css_directories' => array(),
 		'asset_directories' => array(),
-		'cache_directory' => dirname(__FILE__).DS.'cache',
+		'cache_directory' => './cache',
 		'file_path' => null,
 	);
 	
