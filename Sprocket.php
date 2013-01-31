@@ -207,11 +207,13 @@ class Sprocket {
 		}
 	}
 
-	protected function parseCoffeeScript($file_contents=false) {
+	protected function parseCoffeeScript($file_contents=null) {
 		// TODO: Fix this...what's going on here?
 		// $link = $this->file_path.'/'.str_replace(basename($this->file), '', $this->file).'constants.yml';
 		// if(!isset($this->constantsScanned[$link]) && is_file($link)) $this->parseConstants($link);
-		if(!$file_contents) {
+		if($file_contents===false) {
+			return '';
+		} else if($file_contents===null) {
 			$this->coffee = $this->file_contents;
 			preg_match_all('/\#= ([a-z]+) ([^\n]+)/', $this->coffee, $matches);
 			
@@ -234,11 +236,13 @@ class Sprocket {
 
 	}
 	
-	protected function parseCSS($file_contents=false) {
+	protected function parseCSS($file_contents=null) {
 		// TODO: Fix this...what's going on here?
 		// $link = $this->file_path.'/'.str_replace(basename($this->file), '', $this->file).'constants.yml';
 		// if(!isset($this->constantsScanned[$link]) && is_file($link)) $this->parseConstants($link);
-		if(!$file_contents) {
+		if($file_contents===false) {
+			return '';
+		} else if($file_contents===null) {
 			$this->css = $this->file_contents;
 			preg_match_all('/\/\*= ([a-z]+) ([^\n]+)/', $this->css, $matches);
 			
